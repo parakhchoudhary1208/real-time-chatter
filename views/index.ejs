@@ -135,7 +135,7 @@
    })
 
    socket.on("typing", function(data){
-    document.querySelector("#msgspace").textContent = `<i>${data.username}</i> is typing`;
+    document.querySelector("#msgspace").textContent = `${data.username} is typing`;
     clearTimeout(timeout)
     timeout = setTimeout(function(){
       document.querySelector("#msgspace h6").textContent = "none";
